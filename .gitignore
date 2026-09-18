@@ -1,0 +1,28 @@
+# 第三方教材仓库（clone 在仓库之外，见 README 第五节）
+vendor-repos/
+*_repos/
+
+# 数据文件：大体积数据集不进仓库（只放生成脚本与结论）
+*.csv
+*.tsv
+*.zip
+*.gz
+*.parquet
+!docs/**/*.csv
+
+# 本地数据库与生成产物
+*.db
+*.sqlite
+*.sqlite3
+*.log
+__pycache__/
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# 编辑器与系统
+.vscode/settings.json
+.idea/
+Thumbs.db
+desktop.ini
+~$*
